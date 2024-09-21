@@ -1,5 +1,5 @@
 # creating a function which can find the minimum number in the list
-numbers = [560,450,456,767,345,987,634,589,238,189,899]
+numbers = [560,450,456,767,345,150,987,634,589,238,189,899]
 
 def minimum_num(num_list):
     mini_num = 0
