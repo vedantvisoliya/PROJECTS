@@ -22,18 +22,34 @@ def multiply(num1,num2):
 def divide(num1,num2):
     return(num1/num2)
 
-# logic 
+# iteration logic 
 
-if(c == 1):
-    print(f"the sum of {a} + {b} = {add(a,b)}")
-elif(c == 2):
-    if (a > b):
-        print(f"the difference of {a} - {b} = {subtract(a,b)}")  
-    else:
+# if(c == 1):
+#     print(f"the sum of {a} + {b} = {add(a,b)}")
+# elif(c == 2):
+#     if (a > b):
+#         print(f"the difference of {a} - {b} = {subtract(a,b)}")  
+#     else:
+#         print(f"the difference of {b} - {a} = {subtract(a,b)}")
+# elif(c == 3):
+#     print(f"the product of {a} * {b} = {multiply(a,b)}")
+# elif(c == 4):
+#     print(f"the quotient of {a} / {b} = {divide(a,b)}")
+# else:
+#     print(ValueError)
+
+# match case logic
+
+match c:
+    case 1:
+        print(f"the sum of {a} + {b} = {add(a,b)}")
+    case 2 if (a >= b):
+        print(f"the difference of {a} - {b} = {subtract(a,b)}") 
+    case 2:
         print(f"the difference of {b} - {a} = {subtract(a,b)}")
-elif(c == 3):
-    print(f"the product of {a} * {b} = {multiply(a,b)}")
-elif(c == 4):
-    print(f"the quotient of {a} / {b} = {divide(a,b)}")
-else:
-    print(ValueError)
+    case 3:
+        print(f"the product of {a} * {b} = {multiply(a,b)}")
+    case 4:
+        print(f"the quotient of {a} / {b} = {divide(a,b)}")
+    case _:
+        print(ValueError)
