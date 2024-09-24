@@ -3,7 +3,7 @@ num = int(input("enter the length of seires: "))
 
 def fibonacci(num):
     fibo_list = []
-    for i in range(0,num+1):
+    for i in range(0,num):
 
         if(i<2):
             fibo_list.insert(i,i)
